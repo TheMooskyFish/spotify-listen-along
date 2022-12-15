@@ -12,7 +12,7 @@ export async function start(): Promise<void> {
   };
 
   if (spotify) {
-    inject.after(spotify, "getActiveSocketAndDevice", ([_, ret]) => {
+    inject.after(spotify, "getActiveSocketAndDevice", (_, ret) => {
       if (ret) (ret as any).socket.isPremium = true;
       return ret;
     });

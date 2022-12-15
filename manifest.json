@@ -1,16 +1,16 @@
 {
-  "id": "dev.replugged.PluginTemplate",
-  "name": "Plugin Template",
-  "description": "A plugin template",
+  "id": "dev.MooskyFish.SpotifyAlong",
+  "name": "Spotify Listen Along",
+  "description": "Enables Spotify Listen Along without Premium for Replugged",
   "author": {
-    "name": "replugged",
-    "discordID": "1000992611840049192",
-    "github": "replugged-org"
+    "name": "TheMooskyFish",
+    "discordID": "153759249284071424",
+    "github": "TheMooskyFish"
   },
-  "version": "1.0.1",
+  "version": "0.0.3",
   "updater": {
     "type": "github",
-    "id": "replugged-org/plugin-template"
+    "id": "TheMooskyFish/spotify-listen-along"
   },
   "license": "MIT",
   "type": "replugged-plugin",

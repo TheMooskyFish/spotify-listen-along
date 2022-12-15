@@ -1,7 +1,7 @@
 {
-  "name": "plugin-template",
-  "version": "1.0.0",
-  "description": "A plugin template",
+  "name": "spotify-listen-along",
+  "version": "0.0.3",
+  "description": "Enables Spotify Listen Along without Premium for Replugged",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -19,8 +19,8 @@
     "lint:fix": "pnpm run prettier:fix && pnpm run eslint:fix"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "TheMooskyFish#1928",
+  "license": "MIT",
   "devDependencies": {
     "@electron/asar": "^3.2.1",
     "@fal-works/esbuild-plugin-global-externals": "^2.1.2",

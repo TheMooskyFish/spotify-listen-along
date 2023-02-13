@@ -7,7 +7,7 @@
     "discordID": "153759249284071424",
     "github": "TheMooskyFish"
   },
-  "version": "0.0.7",
+  "version": "1.0.0",
   "updater": {
     "type": "github",
     "id": "TheMooskyFish/spotify-listen-along"

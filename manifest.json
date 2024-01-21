@@ -3,11 +3,11 @@
   "name": "Spotify Listen Along",
   "description": "Enables Spotify Listen Along without Premium for Replugged",
   "author": {
-    "name": "TheMooskyFish",
+    "name": "themooskyfish",
     "discordID": "153759249284071424",
     "github": "TheMooskyFish"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "updater": {
     "type": "github",
     "id": "TheMooskyFish/spotify-listen-along"

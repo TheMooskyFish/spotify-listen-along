@@ -1,5 +1,4 @@
-name: Release
-
+name: Release Plugin
 on:
   push:
     tags:
@@ -8,30 +7,26 @@ on:
 jobs:
   release:
     name: Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     permissions:
       contents: write
 
     steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v2
-
+      - name: Checkout Repository
+        uses: actions/checkout@v4
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
-
+          node-version: 18
       - uses: pnpm/action-setup@v2
         with:
           version: latest
-
       - name: Install Node.js dependencies
         run: pnpm install
-
       - name: Build TypeScript and bundle into asar
         run: pnpm run bundle
-
-      - uses: ncipollo/release-action@v1
+      - name: Release bundled asar
+        uses: ncipollo/release-action@v1
         with:
           artifacts: "bundle/*"
           makeLatest: true
